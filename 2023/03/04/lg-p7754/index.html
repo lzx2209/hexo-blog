@@ -14,13 +14,13 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="lzx&#39;s blog">
+    <meta property="og:title" content="Luogu P7754 题解">
     <meta property="og:description" content="lzx&#39;s blog">
     <meta property="og:url" content="http://example.com2023/03/04/lg-p7754/">
     <meta property="og:image" content="/images/6zx.ico">
     <meta property="og:site_name" content="lzx&#39;s blog">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="lzx&#39;s blog">
+    <meta name="twitter:title" content="Luogu P7754 题解">
     <meta name="twitter:description" content="lzx&#39;s blog">
     <meta name="twitter:image" content="/images/6zx.ico">
     <!--- Icon Part-->
@@ -30,6 +30,8 @@
     <link rel="shortcut icon" href="/images/6zx.ico">
     
     <title>
+        
+            Luogu P7754 题解 -
         
         lzx&#39;s blog
     </title>
@@ -68,7 +70,119 @@
     
     
     
-<meta name="generator" content="Hexo 6.3.0"></head>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 <body>
@@ -218,7 +332,7 @@
             
             
                 <div class="article-title">
-                    <h1 class="article-title-regular"></h1>
+                    <h1 class="article-title-regular">Luogu P7754 题解</h1>
                 </div>
             
                 
@@ -238,26 +352,41 @@
                             <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="pc">2023-03-04 10:23:06</span>
-        <span class="mobile">2023-03-04 10:23</span>
+        <span class="pc">2023-03-04 10:32</span>
+        <span class="mobile">2023-03-04 10:32</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="pc">2022-12-27 14:16:03</span>
-            <span class="mobile">2022-12-27 14:16</span>
+            <span class="pc">2023-03-04 10:32:11</span>
+            <span class="mobile">2023-03-04 10:32</span>
             <span class="hover-info">更新</span>
         </span>
     
 
     
     
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/OI/">OI</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E9%A2%98%E8%A7%A3/">题解</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
 
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-file-word"></i>&nbsp;<span>365 字</span>
+            <i class="fa-regular fa-file-word"></i>&nbsp;<span>326 字</span>
         </span>
     
     
@@ -274,18 +403,18 @@
             
 
             <div class="article-content markdown-body">
-                <h1 id="Luogu-P7754-题解"><a href="#Luogu-P7754-题解" class="headerlink" title="Luogu P7754 题解"></a>Luogu P7754 题解</h1><h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>一个 $r \times c$ 格的棋盘，每格由 $a \times b$ 个字符组成，已知第一个格子是$\texttt{ ‘X’ }$，第二个格子是$\texttt{ ‘.’ }$，以此类推，其余的格子在棋盘中交替显示$\texttt{ ‘X’ }$和$\texttt{ ‘.’ }$，现在给出 $r,c,a,b$ 请你打印这个棋盘。</p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>我们可以先判断每个格子该输什么，可以用一个变量来记上一个的状态，但如果 $c$ 是双数，我们要改变一下（改变第一列），然后后期再按它的要求放大。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> r,a,c,b;</span><br><span class="line"><span class="type">bool</span> f[<span class="number">20</span>][<span class="number">20</span>],lf=<span class="number">1</span>;<span class="comment">// f 数组代表每一个格子的内容，lf 是上一个格子的内容。</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	cin&gt;&gt;r&gt;&gt;c&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=r;i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=c;j++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(c%<span class="number">2</span>==<span class="number">0</span> &amp;&amp; j==<span class="number">1</span> &amp;&amp; i!=<span class="number">1</span>) lf=<span class="number">1</span>-lf;<span class="comment">//因为要交替显示，然而，如果 c 是双数时就不对了，所以我们要更改它。</span></span><br><span class="line">			f[i][j]=<span class="number">1</span>-lf;<span class="comment">//将本格的内容设为上一格的相反值。</span></span><br><span class="line">			lf=f[i][j];<span class="comment">//更新</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=r;i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> ii=<span class="number">1</span>;ii&lt;=a;ii++)&#123;<span class="comment">//放大a倍</span></span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=c;j++)&#123;</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> jj=<span class="number">1</span>;jj&lt;=b;jj++)&#123;<span class="comment">//放大b倍</span></span><br><span class="line">					<span class="keyword">if</span>(f[i][j]) cout&lt;&lt;<span class="string">&#x27;.&#x27;</span>;</span><br><span class="line">					<span class="keyword">else</span> cout&lt;&lt;<span class="string">&#x27;X&#x27;</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			cout&lt;&lt;endl;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+                <h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>一个 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="4.766ex" height="1.136ex" role="img" focusable="false" viewBox="0 -491 2106.4 502"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(673.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mi" transform="translate(1673.4,0)"><path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path></g></g></g></svg></mjx-container> 格的棋盘，每格由 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="4.933ex" height="1.595ex" role="img" focusable="false" viewBox="0 -694 2180.4 705"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mo" transform="translate(751.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mi" transform="translate(1751.4,0)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g></g></g></svg></mjx-container> 个字符组成，已知第一个格子是<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.821ex" height="1.57ex" role="img" focusable="false" viewBox="0 -694 2131 694"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="A0" d=""></path><path data-c="2018" d="M64 494Q64 548 86 597T131 670T160 694Q163 694 172 685T182 672Q182 669 170 656T144 625T116 573T101 501Q101 489 102 489T107 491T120 497T138 500Q163 500 180 483T198 440T181 397T139 379Q110 379 87 405T64 494Z" transform="translate(525,0)"></path><path data-c="1D687" d="M39 571Q39 597 49 604T93 611H141H218Q233 602 236 595T239 573Q239 538 210 535Q202 535 202 534T215 507T243 454L257 428L307 535H298Q266 538 266 573Q266 584 267 588T273 598T289 611H366H401Q442 611 454 605T466 573Q466 546 448 538Q442 535 421 535H398L299 327Q299 323 362 201L426 77L449 76Q467 76 475 75T489 65T495 38Q495 11 477 3Q473 1 395 1H317Q295 8 295 38Q295 73 325 76L334 77Q333 78 314 117T276 196L257 235L239 196Q221 157 204 118T186 77Q190 76 196 76Q211 74 218 67T227 55T228 38Q228 28 227 24T221 13T206 1H50Q28 9 28 32V38Q28 63 45 73Q51 76 73 76H96L214 324Q215 327 162 431L108 535H85H79Q67 535 60 536T46 546T39 571Z" transform="translate(803,0)"></path><path data-c="2019" d="M78 634Q78 659 95 676T138 694Q166 694 189 668T212 579Q212 525 190 476T146 403T118 379Q114 379 105 388T95 401Q95 404 107 417T133 448T161 500T176 572Q176 584 175 584T170 581T157 576T139 573Q114 573 96 590T78 634Z" transform="translate(1328,0)"></path><path data-c="A0" d="" transform="translate(1606,0)"></path></g></g></g></svg></mjx-container>，第二个格子是<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.821ex" height="1.57ex" role="img" focusable="false" viewBox="0 -694 2131 694"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="A0" d=""></path><path data-c="2018" d="M64 494Q64 548 86 597T131 670T160 694Q163 694 172 685T182 672Q182 669 170 656T144 625T116 573T101 501Q101 489 102 489T107 491T120 497T138 500Q163 500 180 483T198 440T181 397T139 379Q110 379 87 405T64 494Z" transform="translate(525,0)"></path><path data-c="2E" d="M193 70Q193 105 214 122T258 140Q291 140 311 120T332 70Q332 44 314 23T262 1Q234 1 214 18T193 70Z" transform="translate(803,0)"></path><path data-c="2019" d="M78 634Q78 659 95 676T138 694Q166 694 189 668T212 579Q212 525 190 476T146 403T118 379Q114 379 105 388T95 401Q95 404 107 417T133 448T161 500T176 572Q176 584 175 584T170 581T157 576T139 573Q114 573 96 590T78 634Z" transform="translate(1328,0)"></path><path data-c="A0" d="" transform="translate(1606,0)"></path></g></g></g></svg></mjx-container>，以此类推，其余的格子在棋盘中交替显示<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.821ex" height="1.57ex" role="img" focusable="false" viewBox="0 -694 2131 694"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="A0" d=""></path><path data-c="2018" d="M64 494Q64 548 86 597T131 670T160 694Q163 694 172 685T182 672Q182 669 170 656T144 625T116 573T101 501Q101 489 102 489T107 491T120 497T138 500Q163 500 180 483T198 440T181 397T139 379Q110 379 87 405T64 494Z" transform="translate(525,0)"></path><path data-c="1D687" d="M39 571Q39 597 49 604T93 611H141H218Q233 602 236 595T239 573Q239 538 210 535Q202 535 202 534T215 507T243 454L257 428L307 535H298Q266 538 266 573Q266 584 267 588T273 598T289 611H366H401Q442 611 454 605T466 573Q466 546 448 538Q442 535 421 535H398L299 327Q299 323 362 201L426 77L449 76Q467 76 475 75T489 65T495 38Q495 11 477 3Q473 1 395 1H317Q295 8 295 38Q295 73 325 76L334 77Q333 78 314 117T276 196L257 235L239 196Q221 157 204 118T186 77Q190 76 196 76Q211 74 218 67T227 55T228 38Q228 28 227 24T221 13T206 1H50Q28 9 28 32V38Q28 63 45 73Q51 76 73 76H96L214 324Q215 327 162 431L108 535H85H79Q67 535 60 536T46 546T39 571Z" transform="translate(803,0)"></path><path data-c="2019" d="M78 634Q78 659 95 676T138 694Q166 694 189 668T212 579Q212 525 190 476T146 403T118 379Q114 379 105 388T95 401Q95 404 107 417T133 448T161 500T176 572Q176 584 175 584T170 581T157 576T139 573Q114 573 96 590T78 634Z" transform="translate(1328,0)"></path><path data-c="A0" d="" transform="translate(1606,0)"></path></g></g></g></svg></mjx-container>和<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.821ex" height="1.57ex" role="img" focusable="false" viewBox="0 -694 2131 694"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="A0" d=""></path><path data-c="2018" d="M64 494Q64 548 86 597T131 670T160 694Q163 694 172 685T182 672Q182 669 170 656T144 625T116 573T101 501Q101 489 102 489T107 491T120 497T138 500Q163 500 180 483T198 440T181 397T139 379Q110 379 87 405T64 494Z" transform="translate(525,0)"></path><path data-c="2E" d="M193 70Q193 105 214 122T258 140Q291 140 311 120T332 70Q332 44 314 23T262 1Q234 1 214 18T193 70Z" transform="translate(803,0)"></path><path data-c="2019" d="M78 634Q78 659 95 676T138 694Q166 694 189 668T212 579Q212 525 190 476T146 403T118 379Q114 379 105 388T95 401Q95 404 107 417T133 448T161 500T176 572Q176 584 175 584T170 581T157 576T139 573Q114 573 96 590T78 634Z" transform="translate(1328,0)"></path><path data-c="A0" d="" transform="translate(1606,0)"></path></g></g></g></svg></mjx-container>，现在给出 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="7.186ex" height="2.009ex" role="img" focusable="false" viewBox="0 -694 3176 888"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(451,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></g><g data-mml-node="mi" transform="translate(895.7,0)"><path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path></g><g data-mml-node="mo" transform="translate(1328.7,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></g><g data-mml-node="mi" transform="translate(1773.3,0)"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mo" transform="translate(2302.3,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></g><g data-mml-node="mi" transform="translate(2747,0)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g></g></g></svg></mjx-container> 请你打印这个棋盘。</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>我们可以先判断每个格子该输什么，可以用一个变量来记上一个的状态，但如果 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="0.98ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 433 453"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path></g></g></g></svg></mjx-container> 是双数，我们要改变一下（改变第一列），然后后期再按它的要求放大。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> r,a,c,b;</span><br><span class="line"><span class="type">bool</span> f[<span class="number">20</span>][<span class="number">20</span>],lf=<span class="number">1</span>;<span class="comment">// f 数组代表每一个格子的内容，lf 是上一个格子的内容。</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">	cin&gt;&gt;r&gt;&gt;c&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=r;i++){</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=c;j++){</span><br><span class="line">			<span class="keyword">if</span>(c%<span class="number">2</span>==<span class="number">0</span> &amp;&amp; j==<span class="number">1</span> &amp;&amp; i!=<span class="number">1</span>) lf=<span class="number">1</span>-lf;<span class="comment">//因为要交替显示，然而，如果 c 是双数时就不对了，所以我们要更改它。</span></span><br><span class="line">			f[i][j]=<span class="number">1</span>-lf;<span class="comment">//将本格的内容设为上一格的相反值。</span></span><br><span class="line">			lf=f[i][j];<span class="comment">//更新</span></span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=r;i++){</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> ii=<span class="number">1</span>;ii&lt;=a;ii++){<span class="comment">//放大a倍</span></span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=c;j++){</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> jj=<span class="number">1</span>;jj&lt;=b;jj++){<span class="comment">//放大b倍</span></span><br><span class="line">					<span class="keyword">if</span>(f[i][j]) cout&lt;&lt;<span class="string">'.'</span>;</span><br><span class="line">					<span class="keyword">else</span> cout&lt;&lt;<span class="string">'X'</span>;</span><br><span class="line">				}</span><br><span class="line">			}</span><br><span class="line">			cout&lt;&lt;endl;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
             </div>
 
             
                 <div class="post-copyright-info">
                     <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：</li>
+        <li>本文标题：Luogu P7754 题解</li>
         <li>本文作者：lzx</li>
-        <li>创建时间：2023-03-04 10:23:06</li>
+        <li>创建时间：2023-03-04 10:32:00</li>
         <li>
             本文链接：https://blog.lzx19.top/2023/03/04/lg-p7754/
         </li>
@@ -299,35 +428,32 @@
             
 
             
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/OI/">#OI</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E9%A2%98%E8%A7%A3/">#题解</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
 
             
 
             
                 <div class="article-nav">
                     
-                        <div class="article-prev">
-                            <a class="prev"
-                            rel="prev"
-                            href="/2023/03/04/lg-p8090/"
-                            >
-                                <span class="left arrow-icon flex-center">
-                                    <i class="fa-solid fa-chevron-left"></i>
-                                </span>
-                                <span class="title flex-center">
-                                    <span class="post-nav-title-item"></span>
-                                    <span class="post-nav-item">上一篇</span>
-                                </span>
-                            </a>
-                        </div>
-                    
                     
                         <div class="article-next">
                             <a class="next"
                             rel="next"
-                            href="/2023/03/04/sp-13888/"
+                            href="/2023/03/04/lg-p8090/"
                             >
                                 <span class="title flex-center">
-                                    <span class="post-nav-title-item"></span>
+                                    <span class="post-nav-title-item">Luogu P8090 题解</span>
                                     <span class="post-nav-item">下一篇</span>
                                 </span>
                                 <span class="right arrow-icon flex-center">
@@ -348,8 +474,8 @@
                 <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title"></div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Luogu-P7754-%E9%A2%98%E8%A7%A3"><span class="nav-text">Luogu P7754 题解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E6%84%8F"><span class="nav-text">题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-text">代码</span></a></li></ol></li></ol>
+        <div class="page-title">Luogu P7754 题解</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E6%84%8F"><span class="nav-text">题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-text">代码</span></a></li></ol>
 
     </div>
 </div>
