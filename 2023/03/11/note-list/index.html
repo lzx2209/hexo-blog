@@ -9,18 +9,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2023/03/04/lg-p7632/"/>
+    <link rel="canonical" href="http://example.com/2023/03/11/note-list/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Luogu P7632 题解">
+    <meta property="og:title" content="链表——学习笔记">
     <meta property="og:description" content="lzx&#39;s blog">
-    <meta property="og:url" content="http://example.com2023/03/04/lg-p7632/">
+    <meta property="og:url" content="http://example.com2023/03/11/note-list/">
     <meta property="og:image" content="/images/6zx.ico">
     <meta property="og:site_name" content="lzx&#39;s blog">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Luogu P7632 题解">
+    <meta name="twitter:title" content="链表——学习笔记">
     <meta name="twitter:description" content="lzx&#39;s blog">
     <meta name="twitter:image" content="/images/6zx.ico">
     <!--- Icon Part-->
@@ -31,7 +31,7 @@
     
     <title>
         
-            Luogu P7632 题解 -
+            链表——学习笔记 -
         
         lzx&#39;s blog
     </title>
@@ -394,7 +394,7 @@ mjx-container[display="true"] + br {
             
             
                 <div class="article-title">
-                    <h1 class="article-title-regular">Luogu P7632 题解</h1>
+                    <h1 class="article-title-regular">链表——学习笔记</h1>
                 </div>
             
                 
@@ -414,15 +414,15 @@ mjx-container[display="true"] + br {
                             <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="pc">2023-03-04 10:25</span>
-        <span class="mobile">2023-03-04 10:25</span>
+        <span class="pc">2023-03-11 21:40</span>
+        <span class="mobile">2023-03-11 21:40</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="pc">2023-03-04 10:28:02</span>
-            <span class="mobile">2023-03-04 10:28</span>
+            <span class="pc">2023-03-11 22:20:29</span>
+            <span class="mobile">2023-03-11 22:20</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -438,7 +438,7 @@ mjx-container[display="true"] + br {
                     </li>
                 
                     <li>
-                        | <a href="/tags/%E9%A2%98%E8%A7%A3/">题解</a>&nbsp;
+                        | <a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>&nbsp;
                     </li>
                 
             </ul>
@@ -448,7 +448,7 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-file-word"></i>&nbsp;<span>438 字</span>
+            <i class="fa-regular fa-file-word"></i>&nbsp;<span>684 字</span>
         </span>
     
     
@@ -465,24 +465,50 @@ mjx-container[display="true"] + br {
             
 
             <div class="article-content markdown-body">
-                <h2 id="一-思路"><a href="#一-思路" class="headerlink" title="一.思路"></a>一.思路</h2><p>我们可以先把时间换成以<strong>秒</strong>为单位的，然后在枚举每一秒时谁领先。</p>
-<h2 id="二-重要点"><a href="#二-重要点" class="headerlink" title="二.重要点"></a>二.重要点</h2><ul>
-<li>我们可以用 string 读入时间，再用一个函数以<strong>秒</strong>为单位提取出来（在程序中的函数名: <code>tiqu</code> ）。</li>
-<li>如果双方分数是一样的，那么谁都不领先（在程序中的函数名: out_put ）。</li>
-<li>输出的时候要填充 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 500 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g></g></svg></mjx-container> ，就建一个函数。</li>
-</ul>
-<h2 id="三-实现"><a href="#三-实现" class="headerlink" title="三.实现"></a>三.实现</h2><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n,p,fen[<span class="number">3</span>],shijian[<span class="number">110</span>][<span class="number">3</span>],ta,tb;string s;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">tiqu</span><span class="params">(string x,<span class="type">int</span> th,<span class="type">int</span> player)</span></span>{<span class="comment">// x -&gt;读入的时间 th -&gt;第几个(i) player -&gt;哪一方的球了</span></span><br><span class="line">	shijian[th][player]=<span class="built_in">int</span>(x[<span class="number">0</span>]<span class="number">-48</span>)*<span class="number">600</span>+<span class="built_in">int</span>(x[<span class="number">1</span>]<span class="number">-48</span>)*<span class="number">60</span>+<span class="built_in">int</span>(x[<span class="number">3</span>]<span class="number">-48</span>)*<span class="number">10</span>+<span class="built_in">int</span>(x[<span class="number">4</span>]<span class="number">-48</span>);</span><br><span class="line">}<span class="comment">//转格式( x[0] 是分钟的十位，x[1] 是分钟的个位，x[3] 是秒的十位，x[4]是秒的个位)</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">out_put</span><span class="params">(<span class="type">int</span> t)</span></span>{</span><br><span class="line">	<span class="type">int</span> x=t/<span class="number">60</span>,y=t%<span class="number">60</span>;</span><br><span class="line">	<span class="keyword">if</span>(x/<span class="number">10</span>==<span class="number">0</span>) cout&lt;&lt;<span class="number">0</span>;<span class="comment">//若 x (分钟)是个位数，要输出 '0'</span></span><br><span class="line">	cout&lt;&lt;x&lt;&lt;<span class="string">":"</span>;</span><br><span class="line">	<span class="keyword">if</span>(y/<span class="number">10</span>==<span class="number">0</span>) cout&lt;&lt;<span class="number">0</span>;<span class="comment">//若 y (秒钟)是个位数，也要输出 '0'</span></span><br><span class="line">	cout&lt;&lt;y&lt;&lt;endl;</span><br><span class="line">}<span class="comment">//输出 </span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++){</span><br><span class="line">		cin&gt;&gt;p&gt;&gt;s;</span><br><span class="line">		<span class="type">int</span> op=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(p==<span class="number">1</span>) op=<span class="number">2</span>;</span><br><span class="line">		<span class="built_in">tiqu</span>(s,i,p);<span class="comment">//转换为以秒为单位的时间</span></span><br><span class="line">		shijian[i][op]=<span class="number">4800</span>;<span class="comment">//为了防止在 0 秒进球，然后有BUG</span></span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">60</span>*<span class="number">48</span>;i++){</span><br><span class="line">		fen[<span class="number">0</span>]=fen[<span class="number">1</span>]+fen[<span class="number">2</span>];</span><br><span class="line">		<span class="keyword">if</span>(shijian[fen[<span class="number">0</span>]][<span class="number">1</span>]==i) fen[<span class="number">1</span>]++;</span><br><span class="line">		<span class="keyword">if</span>(shijian[fen[<span class="number">0</span>]][<span class="number">2</span>]==i) fen[<span class="number">2</span>]++;</span><br><span class="line">       <span class="comment">//判断在这一秒是否得分</span></span><br><span class="line">		<span class="keyword">if</span>(fen[<span class="number">1</span>]&gt;fen[<span class="number">2</span>]) ta++;</span><br><span class="line">		<span class="keyword">if</span>(fen[<span class="number">2</span>]&gt;fen[<span class="number">1</span>]) tb++;</span><br><span class="line">      <span class="comment">//判断分数上的领先</span></span><br><span class="line">	}<span class="comment">//枚举每 1 秒</span></span><br><span class="line">	<span class="built_in">out_put</span>(ta);<span class="comment">//输出 a 方的领先时间</span></span><br><span class="line">	<span class="built_in">out_put</span>(tb);<span class="comment">//输出 b 方的领先时间</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+                <h2 id="与数组比较"><a href="#与数组比较" class="headerlink" title="与数组比较"></a>与数组比较</h2><p>优点：插入、删除效率比数组高</p>
+<p>缺点：找一个节点需要遍历这个链表</p>
+<h2 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a><a class="link" target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/828/">单链表 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h2><p>用数组模拟链表</p>
+<p>具体操作可以见下图</p>
+<p><code>idx</code> 当前节点编号</p>
+<p><code>val</code> 当前节点值</p>
+<p><code>next</code> 当前节点的下一个节点的编号</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://picture-bed-1312823107.cos.ap-nanjing.myqcloud.com/2023-03-11-215301.png" alt="2023-03-11-215301"></p>
+<p>原始链表</p>
+<h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3><p><img lazyload="" src="/images/loading.svg" data-src="https://picture-bed-1312823107.cos.ap-nanjing.myqcloud.com/2023-03-11-215325.png" alt="2023-03-11-215325"></p>
+<p>插入一个值为 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 500 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path></g></g></g></svg></mjx-container> 的节点，先将 next 指向下一个节点</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://picture-bed-1312823107.cos.ap-nanjing.myqcloud.com/2023-03-11-215341.png" alt="2023-03-11-215341"></p>
+<p>再把之前的节点的 next 指向这个插入的节点</p>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p><img lazyload="" src="/images/loading.svg" data-src="https://picture-bed-1312823107.cos.ap-nanjing.myqcloud.com/2023-03-11-215355.png" alt="2023-03-11-215355"></p>
+<p>将删除节点的指针指向删除节点的后一个即可</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> m,hed,nxt[<span class="number">114514</span>],v[<span class="number">114514</span>],idx;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    hed=<span class="number">-1</span>;</span><br><span class="line">}<span class="comment">//初始化，一开始没有节点</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">addH</span><span class="params">(<span class="type">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    v[++idx]=x;</span><br><span class="line">    nxt[idx]=hed;</span><br><span class="line">    hed=idx;</span><br><span class="line">}<span class="comment">//在表头插入一个节点，并修改 head 为自己</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">del</span><span class="params">(<span class="type">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    nxt[k]=nxt[nxt[k]];</span><br><span class="line">}<span class="comment">//删除第 k 个插入的节点</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">addI</span><span class="params">(<span class="type">int</span> k,<span class="type">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    v[++idx]=x;</span><br><span class="line">    nxt[idx]=nxt[k];</span><br><span class="line">    nxt[k]=idx;</span><br><span class="line">}<span class="comment">//在第 k 个插入的节点后面插入一个节点</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="built_in">init</span>();</span><br><span class="line">    cin&gt;&gt;m;</span><br><span class="line">    <span class="keyword">while</span>(m--)</span><br><span class="line">    {</span><br><span class="line">        <span class="type">char</span> op;</span><br><span class="line">        cin&gt;&gt;op;</span><br><span class="line">        <span class="keyword">if</span>(op==<span class="string">'H'</span>)</span><br><span class="line">        {</span><br><span class="line">            <span class="type">int</span> x;</span><br><span class="line">            cin&gt;&gt;x;</span><br><span class="line">            <span class="built_in">addH</span>(x);</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(op==<span class="string">'D'</span>)</span><br><span class="line">        {</span><br><span class="line">            <span class="type">int</span> k;</span><br><span class="line">            cin&gt;&gt;k;</span><br><span class="line">            <span class="keyword">if</span>(k==<span class="number">0</span>)</span><br><span class="line">            {</span><br><span class="line">                hed=nxt[hed];</span><br><span class="line">            }<span class="comment">//特判是删除表头节点</span></span><br><span class="line">            <span class="keyword">else</span> <span class="built_in">del</span>(k);</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(op==<span class="string">'I'</span>)</span><br><span class="line">        {</span><br><span class="line">            <span class="type">int</span> k,x;</span><br><span class="line">            cin&gt;&gt;k&gt;&gt;x;</span><br><span class="line">            <span class="built_in">addI</span>(k,x);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=hed;i!=<span class="number">-1</span>;i=nxt[i])</span><br><span class="line">    {</span><br><span class="line">        cout&lt;&lt;v[i]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">    }<span class="comment">//从头到尾输出</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="双链表"><a href="#双链表" class="headerlink" title="双链表"></a><a class="link" target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/829/">双链表 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h2><p>差不多的道理，但是要有一个指向前面一个节点的指针</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://picture-bed-1312823107.cos.ap-nanjing.myqcloud.com/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-11%20221321.png" alt="屏幕截图 2023-03-11 221321"></p>
+<p>原始链表</p>
+<h3 id="插入-1"><a href="#插入-1" class="headerlink" title="插入"></a>插入</h3><p><img lazyload="" src="/images/loading.svg" data-src="https://picture-bed-1312823107.cos.ap-nanjing.myqcloud.com/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-11%20221335.png" alt="屏幕截图 2023-03-11 221335"></p>
+<p>把要插入的节点左指针和右指针分别指向左边的节点和右边的</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://picture-bed-1312823107.cos.ap-nanjing.myqcloud.com/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-11%20221342.png" alt="屏幕截图 2023-03-11 221342"></p>
+<p>将右边的节点的左指针指向要插入的节点</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://picture-bed-1312823107.cos.ap-nanjing.myqcloud.com/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-11%20221350.png" alt="屏幕截图 2023-03-11 221350"></p>
+<p>将左边的节点的右指针指向要插入的节点</p>
+<p><strong>注意：如果和上一步调换顺序会导致右边的节点丢失</strong></p>
+<h3 id="删除-1"><a href="#删除-1" class="headerlink" title="删除"></a>删除</h3><p><img lazyload="" src="/images/loading.svg" data-src="https://picture-bed-1312823107.cos.ap-nanjing.myqcloud.com/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-11%20221359.png" alt="屏幕截图 2023-03-11 221359"></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://picture-bed-1312823107.cos.ap-nanjing.myqcloud.com/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-11%20221406.png" alt="屏幕截图 2023-03-11 221406"></p>
+<p>与单链表差不多</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> m,l[<span class="number">114514</span>],r[<span class="number">114514</span>],v[<span class="number">114514</span>],idx;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    r[<span class="number">1</span>]=<span class="number">2</span>;</span><br><span class="line">    l[<span class="number">2</span>]=<span class="number">1</span>;</span><br><span class="line">    idx=<span class="number">2</span>;</span><br><span class="line">}<span class="comment">//一开始要设两个节点分别为头和尾</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">addR</span><span class="params">(<span class="type">int</span> k,<span class="type">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    v[++idx]=x;</span><br><span class="line"></span><br><span class="line">    r[idx]=r[k];</span><br><span class="line">    l[idx]=k;</span><br><span class="line">    </span><br><span class="line">    l[r[k]]=idx;</span><br><span class="line">    r[k]=idx;</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">addL</span><span class="params">(<span class="type">int</span> k,<span class="type">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="built_in">addR</span>(l[k],x);</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">del</span><span class="params">(<span class="type">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    r[l[k]]=r[k];</span><br><span class="line">    l[r[k]]=l[k];</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="built_in">init</span>();</span><br><span class="line">    cin&gt;&gt;m;</span><br><span class="line">    <span class="keyword">while</span>(m--)</span><br><span class="line">    {</span><br><span class="line">        string op;</span><br><span class="line">        cin&gt;&gt;op;</span><br><span class="line">        <span class="keyword">if</span>(op==<span class="string">"L"</span>)</span><br><span class="line">        {</span><br><span class="line">            <span class="type">int</span> x;</span><br><span class="line">            cin&gt;&gt;x;</span><br><span class="line">            <span class="built_in">addR</span>(<span class="number">1</span>,x);</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span>(op==<span class="string">"R"</span>)</span><br><span class="line">        {</span><br><span class="line">            <span class="type">int</span> x;</span><br><span class="line">            cin&gt;&gt;x;</span><br><span class="line">            <span class="built_in">addL</span>(<span class="number">2</span>,x);</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span>(op==<span class="string">"D"</span>)</span><br><span class="line">        {</span><br><span class="line">            <span class="type">int</span> k;</span><br><span class="line">            cin&gt;&gt;k;</span><br><span class="line">            <span class="built_in">del</span>(k+<span class="number">2</span>);<span class="comment">//别忘记之前加过两个头尾节点</span></span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span>(op==<span class="string">"IL"</span>)</span><br><span class="line">        {</span><br><span class="line">            <span class="type">int</span> k,x;</span><br><span class="line">            cin&gt;&gt;k&gt;&gt;x;</span><br><span class="line">            <span class="built_in">addL</span>(k+<span class="number">2</span>,x);</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span>(op==<span class="string">"IR"</span>)</span><br><span class="line">        {</span><br><span class="line">            <span class="type">int</span> k,x;</span><br><span class="line">            cin&gt;&gt;k&gt;&gt;x;</span><br><span class="line">            <span class="built_in">addR</span>(k+<span class="number">2</span>,x);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=r[<span class="number">1</span>];i!=<span class="number">2</span>;i=r[i])</span><br><span class="line">    {</span><br><span class="line">        cout&lt;&lt;v[i]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
+
+
             </div>
 
             
                 <div class="post-copyright-info">
                     <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：Luogu P7632 题解</li>
+        <li>本文标题：链表——学习笔记</li>
         <li>本文作者：lzx</li>
-        <li>创建时间：2023-03-04 10:25:00</li>
+        <li>创建时间：2023-03-11 21:40:00</li>
         <li>
-            本文链接：https://blog.lzx19.top/2023/03/04/lg-p7632/
+            本文链接：https://blog.lzx19.top/2023/03/11/note-list/
         </li>
         <li>
             版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -501,7 +527,7 @@ mjx-container[display="true"] + br {
                         </li>
                     
                         <li class="tag-item">
-                            <a href="/tags/%E9%A2%98%E8%A7%A3/">#题解</a>&nbsp;
+                            <a href="/tags/%E7%AC%94%E8%AE%B0/">#笔记</a>&nbsp;
                         </li>
                     
                 </ul>
@@ -512,29 +538,14 @@ mjx-container[display="true"] + br {
             
                 <div class="article-nav">
                     
-                        <div class="article-prev">
-                            <a class="prev"
-                            rel="prev"
-                            href="/2023/03/04/sp-1163/"
-                            >
-                                <span class="left arrow-icon flex-center">
-                                    <i class="fa-solid fa-chevron-left"></i>
-                                </span>
-                                <span class="title flex-center">
-                                    <span class="post-nav-title-item">SPOJ 1163 题解</span>
-                                    <span class="post-nav-item">上一篇</span>
-                                </span>
-                            </a>
-                        </div>
-                    
                     
                         <div class="article-next">
                             <a class="next"
                             rel="next"
-                            href="/2023/03/04/about-memset/"
+                            href="/2023/03/05/qzs20230304/"
                             >
                                 <span class="title flex-center">
-                                    <span class="post-nav-title-item">关于 memset</span>
+                                    <span class="post-nav-title-item">20230304模拟赛总结</span>
                                     <span class="post-nav-item">下一篇</span>
                                 </span>
                                 <span class="right arrow-icon flex-center">
@@ -555,8 +566,8 @@ mjx-container[display="true"] + br {
                 <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">Luogu P7632 题解</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-%E6%80%9D%E8%B7%AF"><span class="nav-text">一.思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C-%E9%87%8D%E8%A6%81%E7%82%B9"><span class="nav-text">二.重要点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89-%E5%AE%9E%E7%8E%B0"><span class="nav-text">三.实现</span></a></li></ol>
+        <div class="page-title">链表——学习笔记</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8E%E6%95%B0%E7%BB%84%E6%AF%94%E8%BE%83"><span class="nav-text">与数组比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E9%93%BE%E8%A1%A8"><span class="nav-text">单链表 </span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E5%85%A5"><span class="nav-text">插入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A0%E9%99%A4"><span class="nav-text">删除</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8C%E9%93%BE%E8%A1%A8"><span class="nav-text">双链表 </span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E5%85%A5-1"><span class="nav-text">插入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A0%E9%99%A4-1"><span class="nav-text">删除</span></a></li></ol></li></ol>
 
     </div>
 </div>
